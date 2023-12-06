@@ -1,0 +1,116 @@
+body {
+    font-family: 'Figtree', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.tutor-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    max-width: 1142px;
+    margin: 0 auto 20px; /* Added 20px bottom margin */
+    overflow: hidden;
+}
+
+.tutor-image {
+    flex: 0 0 150px; /* fixed width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutor-image img {
+    width: 100px;        /* Set width of the image */
+    height: 100px;       /* Set height of the image */
+    object-fit: cover;   /* This will ensure your images cover the area nicely */
+    border-radius: 0;    /* This was previously 50% for a circular shape, now set to 0 for square */
+}
+
+.tutor-info {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+
+.tutor-info h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.tutor-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tutor-introduction {
+    margin: 10px 0;
+    color: #999;
+}
+
+.tutor-introduction-short {
+    margin-top: 20px;
+}
+
+.tutor-introduction-full {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+}
+
+.info-button, .book-button, .message-button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.info-button {
+    background-color: transparent;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.book-button {
+    background-color: #ff69b4; /* pink */
+    color: white;
+    margin-right: 10px;
+}
+
+.message-button {
+    background-color: #eee;
+    color: #333;
+}
+
+.tutor-rating-price {
+    flex: 0 0 250px; /* fixed width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tutor-rating {
+    text-align: right;
+}
+
+#numberRating {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.tutor-price {
+    text-align: right;
+    color: #666;
+}
+
+.stars {
+    color: #f5a623;
+}
+
+/* Add your star styling here */

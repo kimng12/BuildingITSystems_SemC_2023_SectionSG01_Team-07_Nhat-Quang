@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Profile Card</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <% for(var i = 0; i < tutors.length; i++) { %>
+        <div class="tutor-card">
+            <div class="tutor-image">
+                <img src="/<%= tutors[i].image %>" alt="Tutor Profile">
+            </div>
+            <div class="tutor-info">
+                <h2><%= tutors[i].name %></h2>
+                <p><strong><%= tutors[i].subject %></strong></p>
+                <p><%= tutors[i].studentCount %> active students • <%= tutors[i].lessonCount %> lessons</p>
+                <p>Speaks <%= tutors[i].languages %></p>
+                <p class="tutor-introduction-short" id="short-intro-<%= i %>">Introduction: <%= tutors[i].shortIntro %></p>
+                <p class="tutor-introduction-full" style="display:none;" id="full-intro-<%= i %>">Introduction: <%= tutors[i].fullIntro %></p>
+                <button class="info-button" onclick="toggleReadMore(<%= i %>);">Read more</button>
+            </div>
+            <div class="tutor-rating-price">
+                <div class="tutor-rating">
+                    <p id="numberRating"><%= tutors[i].rating %></p>
+                    <div class="stars" id="rating"></div>
+                </div>
+                <div class="tutor-price">
+                    <p><%= tutors[i].price %></p>
+                    <p>50-min lesson</p>
+                </div>
+                <div class="tutor-booking">
+                    <button class="book-button">Book trial lesson</button>
+                    <button class="message-button">Send message</button>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
