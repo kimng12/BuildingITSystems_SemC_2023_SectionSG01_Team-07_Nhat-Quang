@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const TutorSchema = new mongoose.Schema({
   salutation: {
@@ -12,13 +13,14 @@ const TutorSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
     required: true,
   },
-  profileImage: {
-    type: String, // Assuming you store the file path or URL
+  profilePhoto: {
+    type: String, 
   },
   phoneNumber: {
     type: Number,
@@ -27,10 +29,10 @@ const TutorSchema = new mongoose.Schema({
     type: Number,
   },
   subjects: {
-    type: [String], // Array of subjects the tutor can teach
+    type: [String], 
   },
   qualifications: {
-    type: String, // Assuming you store the file path or URL for the uploaded qualifications
+    type: String, 
   },
   gender: {
     type: String,
@@ -40,10 +42,22 @@ const TutorSchema = new mongoose.Schema({
     type: String,
   },
   languages: {
-    type: [String], // Array of languages the tutor can communicate in
+    type: [String], 
   },
+});
+
+TutorSchema.pre('save', async function(next) {
+  const tutor = this;
+  if (!tutor.isModified('password')) return next();
+
+  const salt = await bcrypt.genSalt(10);
+  const hash = await bcrypt.hash(tutor.password, salt);
+  tutor.password = hash;
+
+  next();
 });
 
 const Tutor = mongoose.model('Tutor', TutorSchema);
 
 module.exports = Tutor;
+

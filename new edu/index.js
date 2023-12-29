@@ -2,12 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const passport = require('passport');
+const passport = require('./config/passport');
 const studentRoutes = require('./routes/studentRoutes');
 const tutorRoutes = require('./routes/tutorRoutes');
 require('dotenv').config();
 
 const app = express();
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -23,15 +25,17 @@ db.once('open', () => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(session({
-  secret: 'your-secret-key', // Change this to a strong secret key
+  secret: '01G14C10414190C093341VC42C11C',
   resave: true,
   saveUninitialized: true
 }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Passport configuration (Assuming you have a passport.js file for configuration)
-require('./config/passport')(passport);
+// Passport configuration
+const passportConfig = require('./config/passport');
+app.use(passportConfig.initialize());
+app.use(passportConfig.session());
 
 // Set up routes
 app.use('/students', studentRoutes);
@@ -39,7 +43,7 @@ app.use('/tutors', tutorRoutes);
 
 // Home route
 app.get('/', (req, res) => {
-  res.send('Welcome to the home page!');
+  res.render('home');
 });
 
 // Start the server

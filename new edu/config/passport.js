@@ -45,7 +45,7 @@ passport.use('tutor', new LocalStrategy({ usernameField: 'email' }, async (email
 }));
 
 passport.serializeUser((user, done) => {
-  done(null, { id: user.id, userType: user.userType }); // Include userType in the serialized data
+  done(null, { id: user.id, userType: user.userType });
 });
 
 passport.deserializeUser(async ({ id, userType }, done) => {
