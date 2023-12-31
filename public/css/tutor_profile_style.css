@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'Fig Tree';
+  src: url('fonts/FigTree-Regular.woff2') format('woff2'),
+       url('fonts/FigTree-Regular.woff') format('woff'),
+       url('fonts/FigTree-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fig Tree';
+  src: url('fonts/FigTree-Bold.woff2') format('woff2'),
+       url('fonts/FigTree-Bold.woff') format('woff'),
+       url('fonts/FigTree-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Fig Tree', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Assuming you have the following structure in your HTML */
+.profile-header {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* Adjust the color as per your requirement */
+  padding: 20px; /* Adjust padding as needed */
+  border-bottom: 1px solid #eaeaea; /* Add a subtle border */
+}
+
+.profile-photo {
+  border-radius: 0; /* Makes the image square */
+  margin-right: 20px; /* Space between photo and text */
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Ensuring the height is the same as the width to maintain square shape */
+  object-fit: cover; /* Ensures the image covers the square area without stretching */
+}
+
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust text color as needed */
+  margin-bottom: 8px; /* Space between name and details */
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Adjust the size as needed */
+  color: #666; /* Adjust text color as needed */
+  margin-bottom: 8px; /* Space between stats and languages */
+}
+
+.profile-stats .stat-item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Space between stat items */
+}
+
+.stat-item .icon {
+  margin-right: 4px; /* Space between icon and text */
+}
+
+.profile-languages {
+  font-size: 14px; /* Adjust the size as needed */
+  color: #666; /* Adjust text color as needed */
+}
+
+/* Add other styles as needed based on your current HTML structure */
+
+
+.profile-tabs {
+  display: flex;
+  justify-content: start;
+  background: transparent;
+  border-bottom: 2px solid #eaeaea;
+  margin-top: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin-right: 10px;
+}
+
+.tab:hover,
+.active {
+  border-bottom: 3px solid #CBA0F0;
+}
+
+.active {
+  color: #000;
+}
+
+#tab-content {
+  padding: 20px;
+  color: #333;
+}
+
+/* ... existing styles ... */
+
+.info-box {
+  background-color: #e7f3ff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.time-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.time-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.time-button.selected {
+  background-color: #CBA0F0;
+  color: #fff;
+}
+
+.week-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.week-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.week-selector span {
+  margin: 0 15px;
+}
+
+.timezone-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timezone-selector select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.schedule-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-day {
+  text-align: center;
+}
+
+.day-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slot {
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 60px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ... existing styles ... */
+
+.rating-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.average-rating {
+  text-align: center;
+}
+
+.big-rating {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.stars {
+  color: #f5c518; /* Gold color for stars */
+  font-size: 24px;
+}
+
+.total-reviews {
+  font-size: 14px;
+}
+
+.rating-breakdown {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.rating-number {
+  margin-right: 10px;
+}
+
+.rating-bar {
+  height: 10px;
+  background-color: #f5c518; /* Gold color for rating bar */
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.rating-count {
+  min-width: 30px;
+  text-align: right;
+}
+
+.review {
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.review-author {
+  font-weight: bold;
+  background-color: #7a7a7a; /* Placeholder color for author initial background */
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-date {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.review-content {
+  margin-top: 10px;
+}
+
+
+/* ... existing styles ... */
+
+.resume-tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.resume-tab {
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+  position: relative;
+}
+
+.resume-tab.active {
+  font-weight: bold;
+  border-bottom: 3px solid #CBA0F0;
+}
+
+.resume-content .time-period {
+  color: #333;
+  font-weight: bold;
+}
+
+.resume-content .institution {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.resume-content .degree {
+  margin-top: 5px;
+}
+
+.verification-status {
+  color: #28a745;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.verification-status .icon {
+  margin-left: 5px;
+}
+
+/* ... existing styles ... */
+
+#specialties .specialty {
+  margin-bottom: 20px;
+}
+
+#specialties h2 {
+  margin-bottom: 20px;
+}
+
+#specialties h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#specialties p {
+  line-height: 1.6;
+  color: #666;
+}

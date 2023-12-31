@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= tutor.name%>></title>
+    <link rel="stylesheet" href="/css/tutor_profile_style.css">
+</head>
+<body>
+    <div class="profile-header">
+        <img class="profile-photo" src="/<%= tutor.image %>" alt="Tutor Profile Photo">
+        <div class="profile-info">
+            <div class="profile-name"><%= tutor.name %></div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="icon">👨‍🏫</span>
+                    <span>Teaches <%= tutor.subject %></span>
+                </div>
+                <div class="stat-item">
+                    <span class="icon">💬</span>
+                    <span>Speaks <%= tutor.languages %></span>
+                </div>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="icon">🎓</span>
+                    <span><%= tutor.lessonsTaught %> lessons taught</span>
+                </div>
+                <div class="stat-item">
+                    <span class="icon">🔴</span>
+                    <span><%= tutor.percentageFromOtherSources %>% of my students came from other tutors and language apps</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-tabs">
+        <div class="tab active" onclick="showTab('about')">About</div>
+        <div class="tab" onclick="showTab('schedule')">Schedule</div>
+        <div class="tab" onclick="showTab('reviews')">Reviews</div>
+        <div class="tab" onclick="showTab('resume')">Resume</div>
+        <div class="tab" onclick="showTab('specialties')">Specialties</div>
+    </div>
+    
+    <div id="tab-content">
+        <!-- About Tab -->
+        <div id="about" class="tab-pane active">
+            <h2>About the Tutor</h2>
+            <p><%= tutor.fullIntro %></p> <!-- Dynamically loaded content -->
+        </div>
+    
+        <div id="schedule" class="tab-pane">
+            <h2>Schedule</h2>
+            <div class="info-box">
+              <p>Choose the time for your first lesson. The timings are displayed in your local timezone.</p>
+            </div>
+            <div class="time-selection">
+              <button class="time-button selected">25 mins</button>
+              <button class="time-button">50 mins</button>
+            </div>
+            <div class="week-selector">
+              <button class="week-nav">&#60;</button>
+              <span>Dec 8–14, 2023</span>
+              <button class="week-nav">&#62;</button>
+            </div>
+            <div class="timezone-selector">
+              <label for="timezone">Timezone:</label>
+              <select id="timezone">
+                <option>Asia/Bangkok GMT +7:00</option>
+                <!-- Add other timezones as options -->
+              </select>
+            </div>
+            <div class="schedule-grid">
+              <!-- Dynamically generate schedule slots based on availability -->
+              <!-- Example for Monday -->
+              <div class="schedule-day">
+                <div class="day-title">Mon</div>
+                <div class="day-slots">
+                  <button class="slot">09:00</button>
+                  <button class="slot">12:00</button>
+                  <!-- More slots... -->
+                </div>
+              </div>
+              <!-- Repeat for other days -->
+            </div>
+          </div>
+        <!-- Other tabs will follow... -->
+    </div>
+    <script src="/js/tutor_profile_script.js"></script>
+</body>
+</html>

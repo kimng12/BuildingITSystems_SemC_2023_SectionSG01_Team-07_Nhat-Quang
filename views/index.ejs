@@ -26,7 +26,9 @@
                 <img src="/<%= tutors[i].image %>" alt="Tutor Profile">
             </div>
             <div class="tutor-info">
-                <h2><%= tutors[i].name %></h2>
+                <a href="/tutor/<%= encodeURIComponent(tutors[i].name.replace(/\s/g, '-')) %>">
+                    <h2><%= tutors[i].name %></h2>
+                </a>                
                 <p><strong><%= tutors[i].subject %></strong></p>
                 <p><%= tutors[i].studentCount %> active students • <%= tutors[i].lessonCount %> lessons</p>
                 <p>Speaks <%= tutors[i].languages %></p>
