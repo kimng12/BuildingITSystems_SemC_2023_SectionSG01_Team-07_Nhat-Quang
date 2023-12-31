@@ -114,3 +114,98 @@ body {
 }
 
 /* Add your star styling here */
+#filterForm {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filterForm label, #filterForm input {
+    margin-right: 10px;
+}
+
+#filterForm button {
+    padding: 5px 10px;
+/* Add your filter form styling here */
+}
+#filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#filterForm label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+#filterForm input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#filterForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff69b4;
+    cursor: pointer;
+}
+
+#filterForm button:hover {
+    background-color: #d65897;
+}
+a {
+    text-decoration: none;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .tutor-card {
+        flex-direction: column;
+    }
+
+    .tutor-info, 
+    .tutor-rating-price {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tutor-rating-price {
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    #filterForm {
+        flex-direction: column;
+        align-items: stretch; /* Make filter form elements full width */
+    }
+    
+    #filterForm label, 
+    #filterForm input, 
+    #filterForm button {
+        width: 100%; /* Full width for small screens */
+        margin: 5px 0; /* Stack vertically with space between */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .tutor-card {
+        margin: 0 auto 10px; /* Less margin on very small screens */
+    }
+
+    .tutor-image img {
+        width: 80px; /* Smaller images on very small screens */
+        height: 80px;
+    }
+}
