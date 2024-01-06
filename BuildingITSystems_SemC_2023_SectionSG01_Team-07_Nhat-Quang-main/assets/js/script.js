@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-Template Name: Doccure - Bootstrap Template
+Template Name: G7-education - Bootstrap Template
 Version      : 1.0
 */
 
@@ -81,8 +81,8 @@ Version      : 1.0
 	
 	// Fancybox Gallery
 	
-	if($('.clinic-gallery a').length > 0) {
-		$('.clinic-gallery a').fancybox({
+	if($('.tutor-gallery a').length > 0) {
+		$('.tutor-gallery a').fancybox({
 			buttons: [
 				"thumbs",
 				"close"

@@ -2848,12 +2848,12 @@ html.menu-opened body {
 	display: -ms-flexbox;
 	display: flex;
 }
-.doc-info-left {
+.tutor-info-left {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
-.doc-info-right {
+.tutor-info-right {
     margin-left: auto;
     -ms-flex: 0 0 200px;
     flex: 0 0 200px;
@@ -2868,12 +2868,12 @@ html.menu-opened body {
 .Tutor-img img {
 	border-radius: 5px;
 }
-.doc-department {
+.tutor-department {
     color: #20c0f3;
     font-size: 14px;
     margin-bottom: 8px;
 }
-.doc-department img {
+.tutor-department img {
     width: 19px;
     display: inline-block;
     margin-right: 10px;
@@ -2904,34 +2904,34 @@ html.menu-opened body {
 	font-size: 14px;
 	font-weight: 500;
 }
-.clinic-details {
+.tutor-details {
 	margin-bottom: 15px;
 }
-.clinic-details h5 {
+.tutor-details h5 {
     font-weight: normal;
     color: #757575;
     margin-bottom: 25px;
 }
-.clinic-details ul {
+.tutor-details ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.clinic-details ul li {
+.tutor-details ul li {
 	display: inline-block;
 	padding-right: 5px;
 }
-.clinic-details ul li:last-child {
+.tutor-details ul li:last-child {
 	padding-right: 0;
 }
-.clinic-details ul li a {
+.tutor-details ul li a {
 	display: inline-block;
 }
-.clinic-details ul li a img {
+.tutor-details ul li a img {
 	border-radius: 5px;
 	width: 40px;
 }
-.clinic-services {
+.courses {
     color: #272b41;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2940,14 +2940,14 @@ html.menu-opened body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.clinic-services span {
+.courses span {
     border: 1px solid #ccc;
     border-radius: 4px;
     display: inline-block;
     font-size: 12px;
     padding: 3px 10px;
 }
-.clinic-services span + span {
+.courses span + span {
     margin-left: 5px;
 }
 .clini-infos {
@@ -2968,10 +2968,10 @@ html.menu-opened body {
     font-size: 15px;
     min-width: 30px;
 }
-.clinic-booking a + a {
+.tutor-booking a + a {
 	margin-top: 15px;
 }
-.clinic-booking a {
+.tutor-booking a {
     background-color: #fff;
     border: 2px solid #20c0f3;
     border-radius: 4px;
@@ -2985,15 +2985,15 @@ html.menu-opened body {
     text-transform: uppercase;
     width: 100%;
 }
-.clinic-booking a.view-pro-btn:hover, .clinic-booking a.view-pro-btn:focus {
+.tutor-booking a.view-pro-btn:hover, .tutor-booking a.view-pro-btn:focus {
 	background: #20c0f3; 
 	color: #fff;
 }
-.clinic-booking a.apt-btn {
+.tutor-booking a.apt-btn {
     background-color: #20c0f3;
     color: #fff;
 }
-.clinic-booking a.apt-btn:hover, .clinic-booking a.apt-btn:focus {
+.tutor-booking a.apt-btn:hover, .tutor-booking a.apt-btn:focus {
 	background-color: #0db9f2;
 	border-color: #0db9f2;
 	color: #fff;
@@ -3006,12 +3006,12 @@ html.menu-opened body {
 	17. Tutor Profile
 -----------------------*/
 
-.clinic-direction {
+.read-more {
 	color: #757575;
 	font-size: 14px;
 	margin-bottom: 25px;
 }
-.clinic-direction a {
+.read-more a {
     color: #d75684;
     font-weight: 500;
 }
@@ -3170,20 +3170,20 @@ html.menu-opened body {
     left: 0;
     position: absolute;
 }
-.location-list {
+.courses-list {
     border: 1px solid #f0f0f0;
     border-radius: 4px;
     padding: 20px;
 }
-.location-list + .location-list {
+.courses-list + .courses-list {
 	margin-top: 20px;
 }
-.clinic-content .clinic-name {
+.course-content .course-name {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 3px;
 }
-.clinic-content .clinic-direction a {
+.course-content .read-more a {
 	display: inline-block;
 	margin-top: 8px;
 }
@@ -3195,7 +3195,7 @@ html.menu-opened body {
 .timings-times span {
 	display: block;
 }
-.location-list .consult-price {
+.courses-list .consult-price {
     font-size: 20px;
     font-weight: 500;
     color: #272b41;
@@ -3387,16 +3387,16 @@ html.menu-opened body {
 	18. Booking
 -----------------------*/
 
-.booking-doc-info {
+.booking-tutor-info {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
-.booking-doc-info .booking-doc-img {
+.booking-tutor-info .booking-tutor-img {
     width: 80px;
     margin-right: 15px;
 }
-.booking-doc-info .booking-doc-img img {
+.booking-tutor-info .booking-tutor-img img {
     border-radius: 4px;
     height: 80px;
     width: 80px;
@@ -3847,14 +3847,14 @@ html.menu-opened body {
 .tab-content.schedule-cont .card-title {
 	margin-bottom: 10px;
 }
-.doc-times {
+.tutor-times {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.doc-slot-list {
+.tutor-slot-list {
 	background-color: #d9534f;
 	border: 1px solid #d43f3a;
 	border-radius: 4px;
@@ -3863,12 +3863,12 @@ html.menu-opened body {
 	margin: 10px 10px 0 0;
 	padding: 6px 15px;
 }
-.doc-slot-list a {
+.tutor-slot-list a {
 	color: #e48784;
 	display: inline-block;
 	margin-left: 5px;
 }
-.doc-slot-list a:hover {
+.tutor-slot-list a:hover {
 	color: #fff;
 }
 .schedule-nav .nav-tabs {
@@ -4846,7 +4846,7 @@ html.menu-opened body {
     padding: 11px 15px;
     border-radius: 0;
 }
-.services-card .bootstrap-tagsinput input {
+.courses-card .bootstrap-tagsinput input {
 	width: 160px;
 }
 .submit-section .submit-btn {
@@ -5009,10 +5009,10 @@ html.menu-opened body {
 	display: flex;
     text-align: left;
 }
-.profile-info-widget .booking-doc-img {
+.profile-info-widget .booking-tutor-img {
     margin-right: 15px;
 }
-.profile-info-widget .booking-doc-img img {
+.profile-info-widget .booking-tutor-img img {
     border-radius: 4px;
     height: 90px;
     width: 90px;
@@ -5116,10 +5116,10 @@ html.menu-opened body {
     margin: 0 0 10px;
     width: 150px;
 }
-.widget-profile.pat-widget-profile .profile-info-widget .booking-doc-img {
+.widget-profile.pat-widget-profile .profile-info-widget .booking-tutor-img {
 	padding: 0;
 }
-.widget-profile.pat-widget-profile .profile-info-widget .booking-doc-img img {
+.widget-profile.pat-widget-profile .profile-info-widget .booking-tutor-img img {
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -5137,7 +5137,7 @@ html.menu-opened body {
 	display: block;
 	text-align: center;
 }
-.widget-profile .profile-info-widget .booking-doc-img {
+.widget-profile .profile-info-widget .booking-tutor-img {
     display: inline-block;
     margin: 0 0 15px;
     width: auto;
@@ -5145,7 +5145,7 @@ html.menu-opened body {
     background-color: #f7f7f7;
     border-radius: 50%;
 }
-.widget-profile .profile-info-widget .booking-doc-img img {
+.widget-profile .profile-info-widget .booking-tutor-img img {
     border-radius: 50%;
     height: 120px;
     width: 120px;
@@ -5157,7 +5157,7 @@ html.menu-opened body {
     margin-right: auto;
     text-align: left;
 }
-.appointment-list .profile-info-widget .booking-doc-img img {
+.appointment-list .profile-info-widget .booking-tutor-img img {
     border-radius: 4px;
     height: 120px;
     object-fit: cover;
@@ -5804,10 +5804,10 @@ html.menu-opened body {
 		margin-top: 10px;
 		text-align: left;
 	}
-	.booking-doc-info .booking-doc-img {
+	.booking-tutor-info .booking-tutor-img {
 		width: 75px;
 	}
-	.booking-doc-info .booking-doc-img img {
+	.booking-tutor-info .booking-tutor-img img {
 		height: 75px;
 		width: 75px;
 	}
@@ -5923,17 +5923,17 @@ html.menu-opened body {
 		flex-direction: column;
 		text-align: center;
 	}
-	.doc-info-right {
+	.tutor-info-right {
 		margin-left: 0;
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
-	.doc-info-left {
+	.tutor-info-left {
 		-ms-flex-direction: column;
 		flex-direction: column;
 	}
-	.clinic-services {
+	.courses {
 		display: none;
 	}
 	.Tutor-img {
@@ -6112,10 +6112,10 @@ html.menu-opened body {
 	.booking-schedule .day-slot li.right-arrow {
 		right: -20px;
 	}
-	.booking-doc-info .booking-doc-img {
+	.booking-tutor-info .booking-tutor-img {
 		width: 70px;
 	}
-	.booking-doc-info .booking-doc-img img {
+	.booking-tutor-info .booking-tutor-img img {
 		height: 70px;
 		width: 70px;
 	}
@@ -6179,11 +6179,11 @@ html.menu-opened body {
 	.speicality-img img {
 		width: 50px;
 	}
-	.clinic-booking a.view-pro-btn {
+	.tutor-booking a.view-pro-btn {
 		width: 100%;
 		margin-bottom: 15px;
 	}
-	.clinic-booking a.apt-btn {
+	.tutor-booking a.apt-btn {
 		width: 100%;
 	}
 	.chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-name, 
@@ -6215,10 +6215,10 @@ html.menu-opened body {
 	.appointment-list .profile-info-widget {
 		text-align: center;
 	}
-	.appointment-list .profile-info-widget .booking-doc-img {
+	.appointment-list .profile-info-widget .booking-tutor-img {
 		margin: 0 0 15px;
 	}
-	.appointment-list .profile-info-widget .booking-doc-img img {
+	.appointment-list .profile-info-widget .booking-tutor-img img {
 		border-radius: 50%;
 		height: 100px;
 		width: 100px;

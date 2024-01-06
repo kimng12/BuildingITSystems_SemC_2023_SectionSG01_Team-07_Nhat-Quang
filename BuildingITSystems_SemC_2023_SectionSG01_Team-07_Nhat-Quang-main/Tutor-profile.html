@@ -1,10 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en">
 	
-<!-- doccure/Tutor-profile.html  30 Nov 2019 04:12:16 GMT -->
+<!-- G7-education/Tutor-profile.html  30 Nov 2019 04:12:16 GMT -->
 <head>
 		<meta charset="utf-8">
-		<title>Doccure</title>
+		<title>G7-education</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -100,8 +100,26 @@
 						</ul>	 
 					</div>		 
 					<ul class="nav header-navbar-rht">
-						<li class="nav-item">
-							<a class="nav-link header-login" href="login.html">login / Signup </a>
+						<li class="nav-item dropdown has-arrow logged-item">
+							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+								<span class="user-img">
+									<img class="rounded-circle" src="assets/img/Students/Student.jpg" width="31" alt="Ryan Taylor">
+								</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="user-header">
+									<div class="avatar avatar-sm">
+										<img src="assets/img/Students/Student.jpg" alt="User Image" class="avatar-img rounded-circle">
+									</div>
+									<div class="user-text">
+										<h6>Richard Wilson</h6>
+										<p class="text-muted mb-0">Student</p>
+									</div>
+								</div>
+								<a class="dropdown-item" href="Student-dashboard.html">Dashboard</a>
+								<a class="dropdown-item" href="profile-settings.html">Profile Settings</a>
+								<a class="dropdown-item" href="login.html">Logout</a>
+							</div>
 						</li>
 					</ul>
 				</nav>
@@ -134,14 +152,14 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="Tutor-widget">
-								<div class="doc-info-left">
+								<div class="tutor-info-left">
 									<div class="Tutor-img">
 										<img src="assets/img/Tutors/Tutor-thumb-02.jpg" class="img-fluid" alt="User Image">
 									</div>
-									<div class="doc-info-cont">
-										<h4 class="doc-name">Dr. Darren Elder</h4>
-										<p class="doc-speciality">BDS, MDS - Oral & Maxillofacial Surgery</p>
-										<p class="doc-department"><img src="assets/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</p>
+									<div class="tutor-info-cont">
+										<h4 class="tutor-name">Dr. Darren Elder</h4>
+										<p class="tutor-speciality">BDS, MDS - Oral & Maxillofacial Surgery</p>
+										<p class="tutor-department"><img src="assets/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</p>
 										<div class="rating">
 											<i class="fas fa-star filled"></i>
 											<i class="fas fa-star filled"></i>
@@ -150,9 +168,9 @@
 											<i class="fas fa-star"></i>
 											<span class="d-inline-block average-rating">(35)</span>
 										</div>
-										<div class="clinic-details">
-											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Newyork, USA - <a href="javascript:void(0);">Get Directions</a></p>
-											<ul class="clinic-gallery">
+										<div class="tutor-details">
+											<p class="tutor-location"><i class="fas fa-map-marker-alt"></i> Newyork, USA - <a href="javascript:void(0);">Get Directions</a></p>
+											<ul class="tutor-gallery">
 												<li>
 													<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
 														<img src="assets/img/features/feature-01.jpg" alt="Feature">
@@ -175,13 +193,13 @@
 												</li>
 											</ul>
 										</div>
-										<div class="clinic-services">
+										<div class="courses">
 											<span>Dental Fillings</span>
 											<span>Teeth Whitneing</span>
 										</div>
 									</div>
 								</div>
-								<div class="doc-info-right">
+								<div class="tutor-info-right">
 									<div class="clini-infos">
 										<ul>
 											<li><i class="far fa-thumbs-up"></i> 99%</li>
@@ -204,7 +222,7 @@
 											<i class="fas fa-video"></i>
 										</a>
 									</div>
-									<div class="clinic-booking">
+									<div class="tutor-booking">
 										<a class="apt-btn" href="booking.html">Book Appointment</a>
 									</div>
 								</div>
@@ -224,7 +242,7 @@
 										<a class="nav-link active" href="#doc_overview" data-toggle="tab">Overview</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#doc_locations" data-toggle="tab">Locations</a>
+										<a class="nav-link" href="#tut_courses" data-toggle="tab">Locations</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#doc_reviews" data-toggle="tab">Reviews</a>
@@ -374,9 +392,9 @@
 											</div>
 											<!-- /Awards Details -->
 											
-											<!-- Services List -->
+											<!-- courses List -->
 											<div class="service-list">
-												<h4>Services</h4>
+												<h4>courses</h4>
 												<ul class="clearfix">
 													<li>Tooth cleaning </li>
 													<li>Root Canal Therapy</li>
@@ -386,7 +404,7 @@
 													<li>Surgical Extractions</li>
 												</ul>
 											</div>
-											<!-- /Services List -->
+											<!-- /courses List -->
 											
 											<!-- Specializations List -->
 											<div class="service-list">
@@ -408,17 +426,17 @@
 								<!-- /Overview Content -->
 								
 								<!-- Locations Content -->
-								<div role="tabpanel" id="doc_locations" class="tab-pane fade">
+								<div role="tabpanel" id="tut_courses" class="tab-pane fade">
 								
 									<!-- Location List -->
-									<div class="location-list">
+									<div class="courses-list">
 										<div class="row">
 										
 											<!-- Clinic Content -->
 											<div class="col-md-6">
-												<div class="clinic-content">
-													<h4 class="clinic-name"><a href="#">Smile Cute Dental Care Center</a></h4>
-													<p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+												<div class="content">
+													<h4 class="course-name"><a href="#">Smile Cute Dental Care Center</a></h4>
+													<p class="tutor-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
 													<div class="rating">
 														<i class="fas fa-star filled"></i>
 														<i class="fas fa-star filled"></i>
@@ -427,30 +445,9 @@
 														<i class="fas fa-star"></i>
 														<span class="d-inline-block average-rating">(4)</span>
 													</div>
-													<div class="clinic-details mb-0">
-														<h5 class="clinic-direction"> <i class="fas fa-map-marker-alt"></i> 2286  Sundown Lane, Austin, Texas 78749, USA <br><a href="javascript:void(0);">Get Directions</a></h5>
-														<ul>
-															<li>
-																<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-01.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-02.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-03.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-04.jpg" alt="Feature Image">
-																</a>
-															</li>
-														</ul>
+													<div class="tutor-details mb-0">
+														<h5 class="read-more"> <i class="fas fa-map-marker-alt"></i> 2286  Sundown Lane, Austin, Texas 78749, USA <br><a href="javascript:void(0);">Get Directions</a></h5>
+														
 													</div>
 												</div>
 											</div>
@@ -458,7 +455,7 @@
 											
 											<!-- Clinic Timing -->
 											<div class="col-md-4">
-												<div class="clinic-timing">
+												<div class="schedule-timing">
 													<div>
 														<p class="timings-days">
 															<span> Mon - Sat </span>
@@ -490,14 +487,14 @@
 									<!-- /Location List -->
 									
 									<!-- Location List -->
-									<div class="location-list">
+									<div class="courses-list">
 										<div class="row">
 										
 											<!-- Clinic Content -->
 											<div class="col-md-6">
-												<div class="clinic-content">
-													<h4 class="clinic-name"><a href="#">The Family Dentistry Clinic</a></h4>
-													<p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+												<div class="course-content">
+													<h4 class="course-name"><a href="#">The Family Dentistry Clinic</a></h4>
+													<p class="tutor-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
 													<div class="rating">
 														<i class="fas fa-star filled"></i>
 														<i class="fas fa-star filled"></i>
@@ -506,30 +503,8 @@
 														<i class="fas fa-star"></i>
 														<span class="d-inline-block average-rating">(4)</span>
 													</div>
-													<div class="clinic-details mb-0">
-														<p class="clinic-direction"> <i class="fas fa-map-marker-alt"></i> 2883  University Street, Seattle, Texas Washington, 98155 <br><a href="javascript:void(0);">Get Directions</a></p>
-														<ul>
-															<li>
-																<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-01.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-02.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-03.jpg" alt="Feature Image">
-																</a>
-															</li>
-															<li>
-																<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery2">
-																	<img src="assets/img/features/feature-04.jpg" alt="Feature Image">
-																</a>
-															</li>
-														</ul>
+													<div class="tutor-details mb-0">
+														<p class="read-more"> <i class="fas fa-map-marker-alt"></i> 2883  University Street, Seattle, Texas Washington, 98155 <br><a href="javascript:void(0);">Get Directions</a></p>
 													</div>
 
 												</div>
@@ -538,7 +513,7 @@
 											
 											<!-- Clinic Timing -->
 											<div class="col-md-4">
-												<div class="clinic-timing">
+												<div class="schedule-timing">
 													<div>
 														<p class="timings-days">
 															<span> Tue - Fri </span>
@@ -950,7 +925,7 @@
 										</p>
 										<p class="mb-0">
 											<i class="fas fa-envelope"></i>
-											doccure@example.com
+											G7-education@example.com
 										</p>
 									</div>
 								</div>
@@ -1075,5 +1050,5 @@
 		
 	</body>
 
-<!-- doccure/Tutor-profile.html  30 Nov 2019 04:12:16 GMT -->
+<!-- G7-education/Tutor-profile.html  30 Nov 2019 04:12:16 GMT -->
 </html>
